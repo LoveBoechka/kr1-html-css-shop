@@ -55,6 +55,7 @@
 }
 
 body {
+  
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -95,6 +96,11 @@ footer {
 */
 header {
   background-color: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  ;
+  
 }
 
 footer {
@@ -257,7 +263,11 @@ footer {
   border-left: 4px solid var(--color-primary);
   background-color: var(--color-surface);
 }
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+}
 
 /*
   Модальное окно.
@@ -273,6 +283,14 @@ footer {
   border: none;
   border-radius: var(--radius-lg);
 }
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 90px; 
+}
+
+
 
 .order-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);

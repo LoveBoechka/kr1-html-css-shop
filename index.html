@@ -14,10 +14,13 @@
 
     <nav class="site-nav" aria-label="Основная навигация">
       <ul class="site-nav__list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#popular">Популярные товары</a></li>
-        <li><a href="#advantages">Преимущества</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+      <div class="flex-wrapper">
+        <div id="one"><a href="index.html">Главная</a></div>
+        <div id="two"><a href="#popular">Популярные товары</a></div>
+        <div id="three"><a href="#advantages">Преимущества</a></div> 
+        <dic id="four"><a href="#contacts">Контакты</a></div>
+      </div>
+
       </ul>
     </nav>
   </div>
@@ -85,14 +88,17 @@
 
   </article>
 </section>
-<aside class="aside-info">
-  <h2>Информация для студентов</h2>
-  <p>
+<aside class="product-card">
+
+  <h2 class="product-card__title">Информация для студентов</h2>
+  <p class="product-card__price">
     На следующих практических занятиях этот проект будет расширяться:
     появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
     БЭМ-структура и адаптивная версия сайта.
   </p>
 </aside>
+
+
 
 
 
